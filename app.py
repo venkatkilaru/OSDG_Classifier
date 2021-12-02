@@ -56,7 +56,6 @@ with body:
                 st.header('Naive Bayes classifier results')
                 st.dataframe(result)
                 data = pd.DataFrame(result, columns = ["Probability Score"])
-                st.line_chart(data)
                 st.area_chart(data)
                 st.bar_chart(data)
     
