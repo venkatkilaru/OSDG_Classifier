@@ -53,7 +53,7 @@ with body:
                 st.write('Please enter text or upload the file')
             else:
                 result = classify(rawtext)
-                st.header('Sdg Classification Results')
+                st.header('Naive Bayes classifier results')
                 st.dataframe(result)
                 df = pd.DataFrame(result, columns = ["Probability"])
                 st.line_chart(df)            
