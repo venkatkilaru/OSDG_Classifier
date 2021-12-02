@@ -55,7 +55,8 @@ with body:
                 result = classify(rawtext)
                 st.header('Naive Bayes classifier results')
                 st.dataframe(result)
-                df = pd.DataFrame(result, columns = ["Probability Score"])
-                st.line_chart(df)
-                st.area_chart(df)
+                data = pd.DataFrame(result, columns = ["Probability Score"])
+                st.line_chart(data)
+                st.area_chart(data)
+                st.bar_chart(data)
     
