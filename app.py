@@ -35,7 +35,7 @@ def classify(a):
 
 with header:
     titl, imga = st.beta_columns(2)
-    st.title('Sustainable Development Goal Classification') 
+    st.title('UNO-Sustainable Development Goals-Classification') 
      
 
 with body:
