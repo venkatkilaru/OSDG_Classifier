@@ -1,1 +1,1 @@
-# OSDG_Classifier
+# WHO-SDG-Classifier
