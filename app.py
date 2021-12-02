@@ -27,7 +27,7 @@ def classify(a):
             ,"Reduced Inequalites","Sustainable Cities and Communities",
             "Responsible Consumption and Production","Climate Action","Life Below Water","Life On Land"]
     t =zip(li_goals,test_res)
-    df_predic = pd.DataFrame(t,columns=["SDG","Probability"])
+    df_predic = pd.DataFrame(t,columns=["Sustainable Development Goals","Probability Score"])
     df_predic.index = df_predic.index + 1
     return((df_predic))
     
@@ -55,6 +55,6 @@ with body:
                 result = classify(rawtext)
                 st.header('Naive Bayes classifier results')
                 st.dataframe(result)
-                df = pd.DataFrame(result, columns = ["Probability"])
+                df = pd.DataFrame(result, columns = ["Probability Score"])
                 st.line_chart(df)            
     
